@@ -404,7 +404,7 @@ class OWNxExplorer(OWDataProjectionWidget):
         if not graph or graph.number_of_nodes == 0:
             set_graph_none()
             return
-        if graph.number_of_nodes() + graph.number_of_edges() > 30000:
+        if graph.number_of_nodes() + graph.number_of_edges() > 1000000000:
             set_graph_none(self.Error.network_too_large)
             return
         self.Error.clear()
